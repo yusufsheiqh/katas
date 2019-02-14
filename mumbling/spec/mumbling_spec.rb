@@ -1,6 +1,6 @@
 class Mumbler
     def accum(string)
-        string.chars.map.with_index { |char, index| (char * (index + 1)).capitalize }.join('-')
+        string.chars.map.with_index(1) { |char, index| (char * index).capitalize }.join('-')
     end
 end
 
